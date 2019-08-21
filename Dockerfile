@@ -5,7 +5,7 @@ RUN apk --no-cache add python curl ca-certificates openssl && chmod +x /httpserv
 
 WORKDIR /tmp
 
-EXPOSE 80
+EXPOSE 80/tcp
 
 ENTRYPOINT ["/httpserver.py"]
 
